@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function SettingsPage() {
   const [darkMode, setDarkMode] = useState(true);
   const [notifications, setNotifications] = useState(true);
-  const [username, setUsername] = useState("JohnDoe");
+  const [username, setUsername] = useState("Midhun");
   const [email, setEmail] = useState("manufizz123.com");
 
   return (
@@ -17,7 +17,7 @@ export default function SettingsPage() {
       <div className="w-full max-w-2xl bg-white dark:bg-gray-800 p-8 rounded-lg shadow-xl">
         <h1 className="text-3xl font-bold text-center mb-6">⚙️ Settings</h1>
 
-        <div className="space-y-6">
+        <div className="space-y-6">     
 
           <div className="flex justify-between items-center bg-gray-200 dark:bg-gray-700 p-4 rounded-lg">
             <span className="text-lg font-semibold">🌙 Dark Mode</span>
@@ -26,13 +26,13 @@ export default function SettingsPage() {
               className={`w-16 h-8 flex items-center rounded-full p-1 transition-all duration-300 ${
                 darkMode ? "bg-green-500 justify-end" : "bg-gray-500 justify-start"
               }`}
-            >     
+            >
               <div className="w-6 h-6 bg-white rounded-full shadow-md"></div>
             </button>
           </div>
 
           <div className="flex justify-between items-center bg-gray-200 dark:bg-gray-700 p-4 rounded-lg">
-            <span className="text-lg font-semibold">🔔 Notifications</span>
+            <span className="text-lg font-semibold">🔔 Notifications</span>                        
             <button
               onClick={() => setNotifications(!notifications)}
               className={`w-16 h-8 flex items-center rounded-full p-1 transition-all duration-300 ${

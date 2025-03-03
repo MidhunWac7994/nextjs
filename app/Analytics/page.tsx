@@ -7,9 +7,10 @@ const data = [
   { month: "Feb", users: 1500, revenue: 7000 },
   { month: "Mar", users: 1800, revenue: 8500 },
   { month: "Apr", users: 2000, revenue: 10000 },
-  { month: "May", users: 2500, revenue: 13000 },               
-];                                                                                                                           
+  { month: "May", users: 2500, revenue: 13000 },             
+];
 
+  
 export default function AnalyticsPage() {
   return (
 
@@ -50,4 +51,4 @@ export default function AnalyticsPage() {
     </div>
   );
 }
-                    
+                     
